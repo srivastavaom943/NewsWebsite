@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+ <nav>
+    <div class="mainnav container-fluid flex">
+        <a href="images/logo.png" ><img src="images/logo.png" alt="" class="logo"></a>
+        <div class="nav-links">
+            <ul class="flex">
+                <li class="item hover-link" id="sports" onclick="onNavItemClick('sports')">SPORTS</li>
+                <li class="item hover-link" id="finance" onclick="onNavItemClick('finance')">FINANCE</li>
+                <li class="item hover-link" id="geopolitics" onclick="onNavItemClick('geopolitics')">GEOPOLITICS</li>
+            </ul>
+           </div>
+           <div class="search-bar flex">
+               <input type="text" class="searchbox" placeholder="Eg.science" id="search-text">
+               <button class="btn" id="search-button">Search</button>
+               </div>
+    </div>
+ </nav>
+ <main class=" main">
+    <div class="cards container" id="cards main conatiner">
+
+    </div>
+
+    <!-- <div class="cards-box">
+        <div class="cards">
+            <div class="card-header">
+                <img src="https://placehold.co/400x200" alt="" id="news image">
+            </div>
+            <div class="card content">
+                <h2 id="news title" class="news-title">this is tittle</h2>
+                <h6 id="news ource" class="news-source ps-1"> source name</h6>
+                <p id="news desc" class="news-desc ps-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sed magnam laborum nobis velit ea debitis saepe illo perspiciatis! Officiis non reprehenderit porro fugiat quis labore sequi cum autem error!</p>
+            </div>
+        </div>div class="cards-box">
+        <div class="cards">
+            <div class="card-header">
+                <img src="https://placehold.co/400x200" alt="" id="news image">
+            </div>
+            <div class="card content">
+                <h2 id="news title" class="news-title">this is tittle</h2>
+                <h6 id="news ource" class="news-source ps-1"> source name</h6>
+                <p id="news desc" class="news-desc ps-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sed magnam laborum nobis velit ea debitis saepe illo perspiciatis! Officiis non reprehenderit porro fugiat quis labore sequi cum autem error!</p>
+            </div>
+        </div>
+    </div>
+    </div> -->
+    <!-- <div class="cards-box">
+        <div class="cards">
+            <div class="card-header">
+                <img src="https://placehold.co/400x200" alt="" id="news image">
+            </div>
+            <div class="card content">
+                <h2 id="news title" class="news-title">this is tittle</h2>
+                <h6 id="news ource" class="news-source ps-1"> source name</h6>
+                <p id="news desc" class="news-desc ps-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sed magnam laborum nobis velit ea debitis saepe illo perspiciatis! Officiis non reprehenderit porro fugiat quis labore sequi cum autem error!</p>
+            </div>
+        </div>
+    </div> -->
+    
+     
+ </main>
+ <template id="news-template">
+    <div class="cards-box">
+        <div class="cards">
+            <div class="card-header">
+                <img src="https://placehold.co/400x200" alt="" id="news-image">
+            </div>
+            <div class="card content">
+                <h2 id="news-title" class="news-title">this is tittle</h2>
+                <h6 id="news-source" class="news-source ps-1"> source name</h6>
+                <p id="news-desc" class="news-desc ps-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sed magnam laborum nobis velit ea debitis saepe illo perspiciatis! Officiis non reprehenderit porro fugiat quis labore sequi cum autem error!</p>
+            </div>
+        </div>
+    </div>
+ </template>
+       <!-- <div class="check">this is test</div> -->
+    <script src="news.js"></script>
+</body>
+</html>
