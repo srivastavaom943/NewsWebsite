@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label for="">enter x coordinate of point<input type="number" id="inputpoint-x"></label>
+   <br>
+   <label for="">enter y coordinate of point<input type="number" id="inputpoint-y"></label>
+   <br>
+   <label for="">enter z coordinate of point<input type="number" id="inputpoint-z"></label>
+   <br>
+
+   <br>
+   <br>
+   <label for="">enter x point of sphere center <input type="number" id="sphere-x"></label>
+   <br>
+
+   <label for="">enter ypoint of sphere center <input type="number" id="sphere-y"></label>
+ <br>
+   <label for="">enter zpoint of sphere center <input type="number" id="sphere-z"></label>
+   <br>
+   <label for="">radius of sphere <input type="number" name="" id="sphere-radius"></label>
+   <br><br>
+   <button onclick="sphere()">Check The Point</button>
+
+    <script>
+        
+        function sphere(){
+        var xp=document.getElementById("inputpoint-x").value
+        var yp=document.getElementById("inputpoint-y").value
+        var zp=document.getElementById("inputpoint-z").value
+       
+        var xs=document.getElementById("sphere-x").value
+        var ys=document.getElementById("sphere-y").value
+        var zs=document.getElementById("sphere-z").value
+        var radius=document.getElementById("sphere-radius").value
+        
+        var value=Math.sqrt(Math.pow((xs-xp),2)+Math.pow((ys-yp),2)+Math.pow((zs-zp),2))
+        if(value>radius){
+            console.log("point is outside")
+        }
+        else if(value<radius){
+            console.log("point is inside")
+        }
+        else if(value==radius){
+            console.log("point is on radius")
+        }
+       
+        }
+      
+    </script>
+</body>
+</html>
